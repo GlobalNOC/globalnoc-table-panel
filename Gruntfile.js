@@ -21,9 +21,9 @@ module.exports = function(grunt) {
       dist_html: {
         expand: true,
         flatten: true,
-        cwd: 'src/partials',
-        src: ['*.html'],
-        dest: 'dist/partials/'
+        cwd: 'src',
+        src: ['**/*.html'],
+        dest: 'dist'
       },
       dist_css: {
         expand: true,
