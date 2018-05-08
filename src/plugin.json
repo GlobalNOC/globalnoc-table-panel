@@ -1,10 +1,10 @@
 {
   "type": "panel",
-  "name": "Change My Name",
-  "id": "typescript-template-datasource",
+  "name": "GlobalNOC Table",
+  "id": "globalnoc-table-panel",
 
   "info": {
-    "description": "Description of plugin",
+    "description": "A grafana table with some custom additions",
     "author": {
       "name": "Your name or the company name",
       "url": "optional url"
