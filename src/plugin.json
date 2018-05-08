@@ -1,7 +1,7 @@
 {
-  "type": "datasource",
+  "type": "panel",
   "name": "Change My Name",
-  "id": "orgname-pluginname-datasource",
+  "id": "typescript-template-datasource",
 
   "info": {
     "description": "Description of plugin",
