@@ -1,13 +1,13 @@
 {
-  "name": "grafana-typescript-template-panel",
+  "name": "globalnoc-table-panel",
   "version": "0.0.1",
-  "description": "TypeScript Template Data Source for Grafana. A starter template for creating data sources written in TypeScript for Grafana.",
+  "description": "A grafana table with custom additions by GlobalNOC.",
   "scripts": {
     "build": "grunt",
     "watch": "grunt watch",
     "test": "./node_modules/karma/bin/karma start"
   },
-  "author": "Grafana Labs",
+  "author": "GlobalNOC Software Engineering",
   "license": "Apache",
   "dependencies": {
     "lodash": "^4.17.4",
