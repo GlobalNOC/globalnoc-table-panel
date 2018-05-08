@@ -1,10 +1,10 @@
 {
-  "type": "datasource",
-  "name": "Change My Name",
-  "id": "orgname-pluginname-datasource",
+  "type": "panel",
+  "name": "GlobalNOC Table",
+  "id": "globalnoc-table-panel",
 
   "info": {
-    "description": "Description of plugin",
+    "description": "A grafana table with some custom additions",
     "author": {
       "name": "Your name or the company name",
       "url": "optional url"
@@ -19,7 +19,7 @@
       {"name": "Apache License", "url": "https://github.com/yourorg/your-datasource/blob/master/LICENSE"}
     ],
     "version": "0.0.1",
-    "updated": "2017-09-28"
+    "updated": "2018-05-08"
   },
 
   "dependencies": {

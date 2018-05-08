@@ -237,14 +237,12 @@ class TablePanelCtrl extends MetricsPanelCtrl {
 
       if (panel.stickyHeader) {
         containerElem.removeClass('table-panel-container-rel').addClass('table-panel-container-abs');
-
-        headerElem.removeClass('table-panel-header-rel');
+        //headerElem.removeClass('table-panel-header-rel');
 
         titleElem.css({ position: 'absolute' });
       } else {
         containerElem.removeClass('table-panel-container-abs').addClass('table-panel-container-rel');
-
-        headerElem.addClass('table-panel-header-rel');
+        //headerElem.addClass('table-panel-header-rel');
 
         titleElem.css({ position: 'relative' });
       }
