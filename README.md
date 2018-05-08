@@ -1,13 +1,3 @@
-## TypeScript Template Data Source For Grafana
-
-This plugin is a template to help you get started with writing a data source plugin for Grafana in TypeScript.
-
-This template plugin includes:
-
-- Karma and mocha for unit testing in TypeScript
-- Mocks for testing and TypeScript typings to be able to compile the plugin.
-- A basic Grunt script to build the plugin. Builds TypeScript and copies the required files to the dist directory.
-
 ### Getting Started
 
 1. Make a subdirectory named after your plugin in the `data/plugins` subdirectory in your Grafana instance. It does not really matter what the directory name is. When the plugin is installed via the grafana cli, it will create a directory named after the plugin id field in the plugin.json file.
@@ -21,16 +11,6 @@ This template plugin includes:
 `grunt watch` will build the TypeScript files and copy everything to the dist directory automatically when a file changes. This is useful for when working on the code. `karma start` will turn on the karma file watcher so that it reruns all the tests automatically when a file changes.
 
 Changes should be made in the `src` directory. The build task transpiles the TypeScript code into JavaScript and copies it to the `dist` directory. Grafana will load the JavaScript from the `dist` directory and ignore the `src` directory.
-
-### Preparing To Publish Your Plugin On Grafana.com
-
-- The plugin id field in the plugin.json file should be unique and should follow the plugin naming convention: `yourorgname-pluginname-datasource`.
-- If the plugin supports annotations, then change the annotations field in the plugin.json file to `true`.
-- Image links in the plugin are relative to the plugin.json file.
-- Everywhere a class is named ChangeMyName, change it your plugin name.
-- Commit the `dist` directory to Git. Grafana cannot build plugins when loading them and will load the JavaScript in the dist directory if it exists.
-- The README.md should not contain HTML, only Markdown.
-- If the README.md file contains links to images, they should be the GitHub link to the image. For example: `https://raw.githubusercontent.com/yourorg/pluginname-datasource/master/src/img/image_name.png`
 
 ### Grafana SDK Mocks
 
