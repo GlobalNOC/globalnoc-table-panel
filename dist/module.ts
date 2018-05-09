@@ -170,7 +170,7 @@ class TablePanelCtrl extends MetricsPanelCtrl {
     var data;
     var panel = ctrl.panel;
     var pageCount = 0;
-      console.log(this);
+
     function getTableHeight() {
       var panelHeight = ctrl.height;
 
@@ -222,11 +222,7 @@ class TablePanelCtrl extends MetricsPanelCtrl {
       var panelElem = elem.parents('.panel');
       var rootElem = elem.find('.table-panel-scroll');
       var tbodyElem = elem.find('tbody');
-      var containerElem = elem.find('table-panel-container');
-      var headerElem = elem.find('.table-panel-header');
-      var titleElem = elem.find('.table-panel-table-header-inner');
       var footerElem = elem.find('.table-panel-footer');
-      console.log('module.ts');
 
       elem.css({ 'font-size': panel.fontSize });
       panelElem.addClass('table-panel-wrapper');
@@ -235,18 +231,6 @@ class TablePanelCtrl extends MetricsPanelCtrl {
       appendPaginationControls(footerElem);
 
       rootElem.css({ 'max-height': panel.scroll ? getTableHeight() : '' });
-
-      if (panel.stickyHeader) {
-        containerElem.removeClass('table-panel-container-rel').addClass('table-panel-container-abs');
-        //headerElem.removeClass('table-panel-header-rel');
-
-        titleElem.css({ position: 'absolute' });
-      } else {
-        containerElem.removeClass('table-panel-container-abs').addClass('table-panel-container-rel');
-        //headerElem.addClass('table-panel-header-rel');
-
-        titleElem.css({ position: 'relative' });
-      }
     }
 
     // hook up link tooltips

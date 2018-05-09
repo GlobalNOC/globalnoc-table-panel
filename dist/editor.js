@@ -33,7 +33,6 @@ System.register(['lodash', './transformers'], function(exports_1) {
                     this.fontSizes = ['80%', '90%', '100%', '110%', '120%', '130%', '150%', '160%', '180%', '200%', '220%', '250%'];
                     this.addColumnSegment = uiSegmentSrv.newPlusButton();
                     this.updateTransformHints();
-                    console.log('editor.ts');
                 }
                 TablePanelEditorCtrl.prototype.updateTransformHints = function () {
                     this.canSetColumns = false;

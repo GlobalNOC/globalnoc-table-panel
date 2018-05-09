@@ -1,23 +1,11 @@
-<style>
-.table-panel-container-abs {
-  padding-top: 2.2em;
-  position: relative;
-}
-
-.table-panel-container-rel {
-  padding-top: 0em;
-  position: relative;
-}
-</style>
-
-<div class="table-panel-container">
+<div class="table-panel-container" ng-style="{ 'padding-top': ctrl.panel.stickyHeader ? '2.2em' : '0em' }">
   <div class="table-panel-header-bg" ng-show="ctrl.table.rows.length" ng-if="ctrl.panel.stickyHeader"></div>
 	<div class="table-panel-scroll" ng-show="ctrl.table.rows.length">
 		<table class="table-panel-table">
 			<thead class="table-panel-header">
 				<tr>
 					<th ng-repeat="col in ctrl.table.columns" ng-hide="col.hidden">
-						<div class="table-panel-table-header-inner pointer" ng-click="ctrl.toggleColumnSort(col, $index)">
+						<div class="table-panel-table-header-inner pointer" ng-click="ctrl.toggleColumnSort(col, $index)" ng-style="{ position: ctrl.panel.stickyHeader ? 'absolute' : 'relative' }">
 							{{col.title}}
 							<span class="table-panel-table-header-controls" ng-if="col.sort">
 								<i class="fa fa-caret-down" ng-show="col.desc"></i>
