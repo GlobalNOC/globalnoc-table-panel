@@ -168,6 +168,7 @@ System.register(['lodash', 'jquery', 'app/plugins/sdk', './transformers', './edi
                     var data;
                     var panel = ctrl.panel;
                     var pageCount = 0;
+                    console.log(this);
                     function getTableHeight() {
                         var panelHeight = ctrl.height;
                         if (pageCount > 1) {
@@ -210,6 +211,7 @@ System.register(['lodash', 'jquery', 'app/plugins/sdk', './transformers', './edi
                         var headerElem = elem.find('.table-panel-header');
                         var titleElem = elem.find('.table-panel-table-header-inner');
                         var footerElem = elem.find('.table-panel-footer');
+                        console.log('module.ts');
                         elem.css({ 'font-size': panel.fontSize });
                         panelElem.addClass('table-panel-wrapper');
                         appendTableRows(tbodyElem);

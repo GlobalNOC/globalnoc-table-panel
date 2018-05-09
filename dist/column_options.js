@@ -7,7 +7,7 @@ System.register(['lodash', 'app/core/utils/kbn'], function(exports_1) {
         return {
             restrict: 'E',
             scope: true,
-            templateUrl: 'public/app/plugins/panel/table/column_options.html',
+            templateUrl: 'public/plugins/globalnoc-table-panel/column_options.html',
             controller: ColumnOptionsCtrl,
         };
     }

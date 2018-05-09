@@ -4,22 +4,22 @@
   "id": "globalnoc-table-panel",
 
   "info": {
-    "description": "A grafana table with some custom additions",
+    "description": "A grafana table with custom additions by GlobalNOC.",
     "author": {
-      "name": "Your name or the company name",
-      "url": "optional url"
+      "name": "GlobalNOC Software Engineering",
+      "url": "https://globalnoc.iu.edu/"
     },
-    "keywords": ["searchable", "key", "words"],
+    "keywords": ["globalnoc", "table", "panel"],
     "logos": {
       "small": "img/your_logo.png",
       "large": "img/your_logo.png"
     },
     "links": [
-      {"name": "Project site", "url": "https://github.com/yourorg/your-datasource"},
-      {"name": "Apache License", "url": "https://github.com/yourorg/your-datasource/blob/master/LICENSE"}
+      {"name": "Project site", "url": "https://github.com/GlobalNOC/globalnoc-table-panel"},
+      {"name": "Apache License", "url": "https://github.com/GlobalNOC/globalnoc-table-panel/blob/master/LICENSE"}
     ],
     "version": "0.0.1",
-    "updated": "2018-05-08"
+    "updated": "2018-05-09"
   },
 
   "dependencies": {

@@ -90,7 +90,7 @@ export function tablePanelEditor($q, uiSegmentSrv) {
   return {
     restrict: 'E',
     scope: true,
-    templateUrl: 'public/app/plugins/panel/table/editor.html',
+    templateUrl: 'public/plugins/globalnoc-table-panel/editor.html',
     controller: TablePanelEditorCtrl,
   };
 }

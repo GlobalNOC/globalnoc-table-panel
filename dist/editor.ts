@@ -20,6 +20,7 @@ export class TablePanelEditorCtrl {
     this.fontSizes = ['80%', '90%', '100%', '110%', '120%', '130%', '150%', '160%', '180%', '200%', '220%', '250%'];
     this.addColumnSegment = uiSegmentSrv.newPlusButton();
     this.updateTransformHints();
+    console.log('editor.ts');
   }
 
   updateTransformHints() {
@@ -90,7 +91,7 @@ export function tablePanelEditor($q, uiSegmentSrv) {
   return {
     restrict: 'E',
     scope: true,
-    templateUrl: 'public/app/plugins/panel/table/editor.html',
+    templateUrl: 'public/plugins/globalnoc-table-panel/editor.html',
     controller: TablePanelEditorCtrl,
   };
 }
