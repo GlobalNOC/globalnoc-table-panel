@@ -11,8 +11,8 @@
     },
     "keywords": ["globalnoc", "table", "panel"],
     "logos": {
-      "small": "img/your_logo.png",
-      "large": "img/your_logo.png"
+      "small": "img/icn-table-panel.svg",
+      "large": "img/icn-table-panel.svg"
     },
     "links": [
       {"name": "Project site", "url": "https://github.com/GlobalNOC/globalnoc-table-panel"},
